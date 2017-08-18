@@ -15,7 +15,7 @@ O circuito usando o CI LM317 é mostrado abaixo.  O resistor R2 é o resistor de
 A idéia básica do circuito é ter um CI com saída fixa entre os pinos Vout e o pino de ajuste. A tensão de saída no CI LM317 é de 1,2 V e é chamada de tensão de referência Rref. Esta tensão fixa sobre o resistor Rf gera uma corrente constante em direção ao resistor R2 ajustável. O segredo do circuito é que a corrente sobre R2 é devido principalmente a corrente gerada sobre Rf desde que a corrente interna do CI que flui pelo pino  de ajuste é muito baixa. O fabricante constrói o CI de forma a ter 
 uma corrente no pino de ajuste muito menor do que a corrente sobre o resistor Rf, de forma que, esta corrente possa ser desprezada no cálculo da tensão de saída!Para calcular a tensão de saída Vout você deve trabalhar na malha de saída e o resultado é mostrado abaixo:
 
-__Vout=Vref.(1+(Rf/R2))=1,2V(1+(Rf/R2))
+_Vout=Vref.(1+(Rf/R2))=1,2V(1+(Rf/R2))_
 
 Observe que também são empregados capacitores para estabilizar o circuito, estes capacitores devem ser de tântalo, se for usado capacitor comum de alumínio o valor dos capacitores deve ser aumentado de 10 vezes!O circuito é mostrado abaixo : 
 ![](https://github.com/ICMC/charger/blob/master/circuit.png)
