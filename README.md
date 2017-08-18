@@ -1,4 +1,4 @@
-# charger
+# Charger
 
 ![](https://github.com/ICMC/charger/blob/master/power.png)
 
@@ -9,8 +9,8 @@ Retifica sinais senoidais da corrente eletrica, permitindo que a corrende flua s
 ## Capacitores:
 sua funcao é separar corrente alternada da continua, quando apresentam se simultaneamente,ele se comporta como circuito aberto em corrente continua e resistor em corrente alternada,o capacitor em paralelo na fonte serve para diminuir os “ruidos”!
 
-## Regulador de Tensao :
-### 7 Aplicação do CI LM317:
+## Regulador de Tensão :
+### Aplicação do CI LM317:
 O circuito usando o CI LM317 é mostrado abaixo.  O resistor R2 é o resistor de ajuste da tensão de saída e o resistor Rf é fixo no valor de 220 Ohm sendo este um valor recomendado pelo fabricante (na verdade o fabricante recomenda uma resistor de 240 Ohm)!
 A idéia básica do circuito é ter um CI com saída fixa entre os pinos Vout e o pino de ajuste. A tensão de saída no CI LM317 é de 1,2 V e é chamada de tensão de referência Rref. Esta tensão fixa sobre o resistor Rf gera uma corrente constante em direção ao resistor R2 ajustável. O segredo do circuito é que a corrente sobre R2 é devido principalmente a corrente gerada sobre Rf desde que a corrente interna do CI que flui pelo pino  de ajuste é muito baixa. O fabricante constrói o CI de forma a ter 
 uma corrente no pino de ajuste muito menor do que a corrente sobre o resistor Rf, de forma que, esta corrente possa ser desprezada no cálculo da tensão de saída!Para calcular a tensão de saída Vout você deve trabalhar na malha de saída e o resultado é mostrado abaixo:
@@ -28,7 +28,6 @@ Observe que também são empregados capacitores para estabilizar o circuito, est
 ![](https://github.com/ICMC/charger/blob/master/circuitosRetificadores.png)
 
  * Circuitos retificadores a diodo são usados em fontes de alimentação cc para alimentar  um equipamento eletrônico.
-
  * A fonte é alimentada por uma rede elétrica ca de 60Hz com 120V (eficaz ou rms).
  * O retificador entrega uma tensão cc VO para um circuito eletrônico, representado pelo bloco “carga”.
  * O transformador de potência consiste em duas bobinas enroladas separadamente em um núcleo de ferro que acopla magneticamente os dois enrolamentos.
